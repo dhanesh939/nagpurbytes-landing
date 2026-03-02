@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NagpurBytes — Build Logs & Experiments</title>
+  <meta name="description" content="NagpurBytes is a build log for AI agents, analytics engineering, and automation experiments." />
+  <style>
+    :root { --bg:#070A0F; --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.70); --line:rgba(255,255,255,.12); --card:rgba(255,255,255,.06); }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:radial-gradient(900px 500px at 20% 10%, rgba(92,148,255,.20), transparent 55%),radial-gradient(900px 500px at 85% 25%, rgba(160,97,255,.16), transparent 55%),var(--bg);color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:10px 0 28px}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg, rgba(92,148,255,.95), rgba(160,97,255,.9))}
+    .brand b{letter-spacing:.2px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{padding:34px 0 10px}
+    .pill{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+    .dot{width:8px;height:8px;border-radius:999px;background:rgba(49,255,214,.75);box-shadow:0 0 18px rgba(49,255,214,.35)}
+    h1{font-size:clamp(34px,5vw,54px);line-height:1.02;margin:16px 0 12px;letter-spacing:-1px}
+    p{margin:0 0 18px;color:var(--muted);font-size:18px;line-height:1.55;max-width:760px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.08);color:var(--text);text-decoration:none;font-weight:650;font-size:14px}
+    .btn:hover{background:rgba(255,255,255,.12)}
+    .btn.primary{border:none;background:linear-gradient(135deg, rgba(92,148,255,.95), rgba(160,97,255,.9))}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:26px}
+    .card{grid-column:span 12;border:1px solid var(--line);background:var(--card);border-radius:18px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:15px}
+    .card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.6}
+    @media (min-width:860px){.half{grid-column:span 6}}
+    footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);color:rgba(255,255,255,.55);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><div class="logo"></div><b>NagpurBytes</b></div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="pill"><span class="dot"></span> Build logs • experiments • shipping</div>
+      <h1>We build in public.</h1>
+      <p>
+        NagpurBytes is our lab for AI agents, analytics engineering, and automation systems.
+        The flagship product brand is <strong>Avyron</strong> — an autonomous digital workforce.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://avyron.ai/" target="_blank" rel="noreferrer">Visit Avyron</a>
+        <a class="btn" href="#projects">See projects</a>
+      </div>
+
+      <div id="projects" class="grid">
+        <div class="card half">
+          <h3>Current focus</h3>
+          <ul>
+            <li>Avyron Media Agent (faceless channel automation)</li>
+            <li>Agent framework: reusable prompts + workflows</li>
+            <li>Build notes and releases</li>
+          </ul>
+        </div>
+        <div class="card half">
+          <h3>Coming next</h3>
+          <ul>
+            <li>Avyron PM Agent</li>
+            <li>Avyron BI Agent</li>
+            <li>Avyron Ops Agent</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="grid">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>For collaborations or early access, email <strong>hello@avyron.ai</strong> (coming soon).</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> NagpurBytes</div>
+      <div>Operated by Nagpur LLC</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
